@@ -1,0 +1,139 @@
+/**
+ * ============================================================
+ * EFATÁ BOOK — Design System
+ * Arquivo: tokens/typography.css
+ * Descrição: Tokens oficiais de tipografia da marca Efatá Book
+ * Mantenedor: Jonas Vieira (@JonasEfata)
+ * Atualização: Abril 2026
+ * ============================================================
+ *
+ * COMO USAR:
+ * 1. Importe este arquivo no início do seu CSS principal:
+ *      @import url('./tokens/typography.css');
+ *
+ * 2. As fontes do Google já são carregadas automaticamente.
+ *
+ * 3. Use as variáveis em qualquer seletor:
+ *      font-family: var(--eb-font-titulo);
+ *      font-size: var(--eb-texto-lg);
+ * ============================================================
+ */
+
+/* ── IMPORTAÇÃO DAS FONTES (Google Fonts) ─────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap');
+
+
+:root {
+
+  /* ── FAMÍLIAS DE FONTE ────────────────────────────────── */
+
+  /** Fonte de títulos — Montserrat
+   *  Uso: h1, h2, h3, nome da marca, botões, labels */
+  --eb-font-titulo: 'Montserrat', sans-serif;
+
+  /** Fonte de corpo — Lato
+   *  Uso: parágrafos, descrições, textos longos */
+  --eb-font-corpo: 'Lato', sans-serif;
+
+  /** Fonte alternativa de corpo — Open Sans
+   *  Uso: substituto do Lato quando necessário */
+  --eb-font-alt: 'Open Sans', sans-serif;
+
+
+  /* ── PESOS (font-weight) ──────────────────────────────── */
+
+  --eb-peso-leve:      300;
+  --eb-peso-normal:    400;
+  --eb-peso-semibold:  600;
+  --eb-peso-bold:      700;
+  --eb-peso-extrabold: 800;
+
+
+  /* ── ESCALA DE TAMANHOS ───────────────────────────────── */
+
+  --eb-texto-xs:   11px;   /* Labels, badges, legendas */
+  --eb-texto-sm:   13px;   /* Notas, rodapé, metadados */
+  --eb-texto-md:   15px;   /* Corpo padrão */
+  --eb-texto-lg:   17px;   /* Corpo de leitura confortável */
+  --eb-texto-xl:   20px;   /* Subtítulos menores */
+  --eb-texto-2xl:  26px;   /* Subtítulos */
+  --eb-texto-3xl:  32px;   /* Títulos de seção */
+  --eb-texto-4xl:  42px;   /* Títulos de página */
+  --eb-texto-5xl:  56px;   /* Títulos de hero / capa */
+  --eb-texto-hero: 80px;   /* Display / logotipo grande */
+
+
+  /* ── ALTURA DE LINHA (line-height) ───────────────────── */
+
+  --eb-linha-apertada:  1.2;   /* Títulos grandes */
+  --eb-linha-normal:    1.5;   /* Subtítulos */
+  --eb-linha-conforto:  1.7;   /* Corpo de texto */
+  --eb-linha-ampla:     1.9;   /* Texto de leitura longa */
+
+
+  /* ── ESPAÇAMENTO DE LETRAS (letter-spacing) ──────────── */
+
+  --eb-espaco-apertado:  -1px;   /* Títulos muito grandes */
+  --eb-espaco-normal:     0px;   /* Padrão */
+  --eb-espaco-aberto:     1px;   /* Subtítulos */
+  --eb-espaco-largo:      3px;   /* Labels, badges */
+  --eb-espaco-muito-largo: 6px;  /* Taglines, ornamentos */
+
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   CLASSES PRONTAS PARA USO DIRETO NO HTML
+   ══════════════════════════════════════════════════════════ */
+
+/* Título principal */
+.eb-titulo {
+  font-family: var(--eb-font-titulo);
+  font-weight: var(--eb-peso-extrabold);
+  font-size: var(--eb-texto-4xl);
+  line-height: var(--eb-linha-apertada);
+  letter-spacing: var(--eb-espaco-apertado);
+}
+
+/* Subtítulo */
+.eb-subtitulo {
+  font-family: var(--eb-font-titulo);
+  font-weight: var(--eb-peso-semibold);
+  font-size: var(--eb-texto-2xl);
+  line-height: var(--eb-linha-normal);
+}
+
+/* Destaque / chamada */
+.eb-destaque {
+  font-family: var(--eb-font-titulo);
+  font-weight: var(--eb-peso-semibold);
+  font-style: italic;
+  font-size: var(--eb-texto-xl);
+  line-height: var(--eb-linha-normal);
+}
+
+/* Corpo de texto */
+.eb-corpo {
+  font-family: var(--eb-font-corpo);
+  font-weight: var(--eb-peso-normal);
+  font-size: var(--eb-texto-lg);
+  line-height: var(--eb-linha-conforto);
+}
+
+/* Label / etiqueta */
+.eb-label {
+  font-family: var(--eb-font-titulo);
+  font-weight: var(--eb-peso-bold);
+  font-size: var(--eb-texto-xs);
+  letter-spacing: var(--eb-espaco-largo);
+  text-transform: uppercase;
+}
+
+/* Legenda / nota de rodapé */
+.eb-legenda {
+  font-family: var(--eb-font-corpo);
+  font-weight: var(--eb-peso-normal);
+  font-style: italic;
+  font-size: var(--eb-texto-sm);
+  line-height: var(--eb-linha-conforto);
+}

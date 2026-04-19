@@ -1,0 +1,91 @@
+/**
+ * ============================================================
+ * EFATÁ BOOK — Design System
+ * Arquivo: tokens/colors.css
+ * Descrição: Tokens oficiais de cor da marca Efatá Book
+ * Mantenedor: Jonas Vieira (@JonasEfata)
+ * Atualização: Abril 2026
+ * ============================================================
+ *
+ * COMO USAR:
+ * Importe este arquivo no início do seu CSS principal:
+ *   @import url('./tokens/colors.css');
+ *
+ * Depois use as variáveis em qualquer seletor:
+ *   background: var(--eb-azul);
+ *   color: var(--eb-laranja);
+ * ============================================================
+ */
+
+:root {
+
+  /* ── PALETA PRINCIPAL ─────────────────────────────────── */
+
+  /** Azul Institucional
+   *  Uso: fundos principais, cabeçalho, rodapé, botões secundários */
+  --eb-azul: #140083;
+
+  /** Azul Complementar
+   *  Uso: gradientes, seções secundárias, variações de fundo */
+  --eb-azul-comp: #1A2D84;
+
+  /** Laranja Principal
+   *  Uso: botões primários, links, ícones, destaques, CTAs */
+  --eb-laranja: #F28500;
+
+  /** Amarelo Claro
+   *  Uso: preços, badges, alertas, fundo de avisos */
+  --eb-amarelo: #FFEF00;
+
+  /** Amarelo Dourado
+   *  Uso: hover de links, estrelas de avaliação, bordas especiais */
+  --eb-dourado: #FFD700;
+
+
+  /* ── NEUTROS ──────────────────────────────────────────── */
+
+  --eb-branco:       #FFFFFF;
+  --eb-cinza-claro:  #F5F6FA;
+  --eb-cinza-medio:  #CCCCCC;
+  --eb-cinza-texto:  #444444;
+  --eb-preto-suave:  #111111;
+
+
+  /* ── TRANSPARÊNCIAS (overlay) ─────────────────────────── */
+
+  --eb-azul-10:     rgba(20, 0, 131, 0.10);
+  --eb-azul-20:     rgba(20, 0, 131, 0.20);
+  --eb-azul-50:     rgba(20, 0, 131, 0.50);
+  --eb-laranja-10:  rgba(242, 133, 0, 0.10);
+  --eb-laranja-20:  rgba(242, 133, 0, 0.20);
+
+
+  /* ── GRADIENTES INSTITUCIONAIS ────────────────────────── */
+
+  /** Gradiente principal — banners e capas */
+  --eb-grad-principal:
+    linear-gradient(135deg, var(--eb-azul) 0%, var(--eb-laranja) 100%);
+
+  /** Gradiente suave — fundos de seção */
+  --eb-grad-suave:
+    linear-gradient(135deg, var(--eb-azul) 0%, var(--eb-azul-comp) 100%);
+
+  /** Gradiente dourado — destaques especiais */
+  --eb-grad-dourado:
+    linear-gradient(90deg, var(--eb-laranja) 0%, var(--eb-dourado) 100%);
+
+
+  /* ── SOMBRAS ──────────────────────────────────────────── */
+
+  --eb-sombra-card:   0 6px 32px rgba(20, 0, 131, 0.13);
+  --eb-sombra-hover:  0 16px 40px rgba(20, 0, 131, 0.20);
+  --eb-sombra-btn:    0 4px 14px rgba(242, 133, 0, 0.35);
+
+
+  /* ── BORDAS ───────────────────────────────────────────── */
+
+  --eb-borda-card:    2px solid var(--eb-azul);
+  --eb-borda-input:   1px solid var(--eb-cinza-medio);
+  --eb-borda-foco:    2px solid var(--eb-laranja);
+
+}
