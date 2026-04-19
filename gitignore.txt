@@ -1,0 +1,31 @@
+# Sistema operacional
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Dependências (caso futuramente use npm)
+node_modules/
+npm-debug.log*
+
+# Arquivos de build
+dist/
+build/
+
+# Variáveis de ambiente (nunca subir no GitHub!)
+.env
+.env.local
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
